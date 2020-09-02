@@ -1,2 +1,0 @@
-export const TOKEN = "QUIZZER-TOKEN"
-export const USERNAME = "QUIZZER-USERNAME"
