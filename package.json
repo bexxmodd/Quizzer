@@ -1,0 +1,28 @@
+{
+  "name": "Quizzer",
+  "version": "1.0.0",
+  "description": "<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->\r [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)\r <!-- ALL-CONTRIBUTORS-BADGE:END -->\r <p align=\"center\">\r <img src=\"./assets/ReadmeHeader.png\"/>\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ninja-Developers/Quizzer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ninja-Developers/Quizzer/issues"
+  },
+  "homepage": "https://github.com/Ninja-Developers/Quizzer#readme",
+  "dependencies": {
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
