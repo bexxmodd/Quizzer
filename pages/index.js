@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-const Index = props => {
+const Index = ({ quizzes }) => {
     const classes = useStyles()
 
     return <div>
@@ -34,8 +34,22 @@ const Index = props => {
                     </Grid>
                 </Grid>
             </Container>
+            {console.log(quizzes)}
         </div>
     </div>
+}
+
+export async function getStaticProps(context) {
+
+    const { getAllQuizzes } = require('../lib/airtable/quiz')
+
+    let data = await getAllQuizzes()
+
+    return {
+        props: {
+            quizzes: data
+        }
+    }
 }
 
 export default Index
