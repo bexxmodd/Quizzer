@@ -1,23 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './login.css';
-import Login from "./Login";
 
-var destination = document.querySelector("#container");
-
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { Provider } from "react-redux";
+import store from './redux'
 
 ReactDOM.render(
-
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-
-  <div>
-    <Login/>
-  </div>,
-
-  destination
-
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
+  document.getElementById("root")
 );
