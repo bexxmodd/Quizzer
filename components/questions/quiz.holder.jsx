@@ -28,36 +28,24 @@ const QuizHolder = props => {
                                 <FormControl fullWidth >
                                     <TextField
                                         label="Question"
+                                        value={props.data.question}
                                     />
                                 </FormControl>
                             </Grid>
-                            <Grid item xs={6}>
-                                <FormControl fullWidth>
-                                    <TextField 
-                                    label="options"
-                                    />
+                            
+                            {props.data.options.map(el => <>
+                                <Grid item xs={6}>
+                                    <FormControl fullWidth>
+                                        <TextField
+                                            label="options"
+                                            value={el}
+                                        />
 
-                                </FormControl>
+                                    </FormControl>
 
-                            </Grid>
-                            <Grid item xs={6}>
-                                <FormControl fullWidth>
-                                    <TextField 
-                                    label="options"
-                                    />
+                                </Grid>
+                            </>)}
 
-                                </FormControl>
-
-                            </Grid>
-                            <Grid item xs={6}>
-                                <FormControl fullWidth>
-                                    <TextField 
-                                    label="options"
-                                    />
-
-                                </FormControl>
-
-                            </Grid>
                         </Grid>
                     </Grid>
                     <Grid item xs={2}>
