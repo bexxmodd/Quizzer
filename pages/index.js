@@ -46,7 +46,7 @@ export async function getStaticProps(context) {
     let data = await getAllQuizzes()
 
     return {
-        props: {
+        props: {    
             quizzes: data
         }
     }
